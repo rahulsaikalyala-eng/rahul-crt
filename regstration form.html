@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <tittle>Registration Form</tittle>
+        <style>
+            body{
+                background-color:blueviolet;
+                font-style:italic ;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+        <body>
+        <form action="#" method="GET">
+        <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required />
+            <br>
+  
+            <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required />
+           <br>
+  
+         <label for="course">Select Course:</label>
+           <select id="course" name="course">
+          <option value="computerscience">Computer Science</option>
+         <option value="engineering">Engineering</option>
+         <option value="artificalintelligence">Artifical Inteligence</option>
+         <option value="artificalintelligenceanddatascience">Artifical Inteligence and data science</option>
+          </select>
+          <br>
+  
+          <label for="address">Address:</label>
+         <textarea id="address" name="address" rows="4" cols="50"></textarea>
+         <br>
+  
+        <input type="submit" value="Submit " />
+         <input type="reset" value="Reset Form" />
+        </form>
+    </body>
+    </head>
+</html>
