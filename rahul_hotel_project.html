@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rahul/ Hotel Management System</title>
+
+<style>
+
+/* BODY WITH DARK OVERLAY */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(hotel.jfif);
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    color:white;
+}
+
+/* HEADER */
+header{
+    background:rgba(0,0,0,0.7);
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+/* NAVIGATION */
+nav{
+    background:rgba(0,0,0,0.8);
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#1abc9c;
+}
+
+/* SECTION */
+section{
+    padding:40px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+/* ROOMS */
+.rooms{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.room{
+    background:white;
+    color:#2c3e50;
+    padding:15px;
+    border-radius:10px;
+    width:270px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    text-align:center;
+    transition:transform 0.3s;
+}
+
+.room:hover{
+    transform:scale(1.05);
+}
+
+.room img{
+    width:100%;
+    height:180px;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+.room h3{
+    margin-top:10px;
+    font-size:22px;
+}
+
+/* BOOKING SECTION BACKGROUND */
+#booking{
+    background: rgba(0,0,0,0.5);
+    border-radius:12px;
+}
+
+/* BOOKING FORM */
+form{
+    background: rgba(0,0,0,0.75);
+    color:white;
+    padding:25px;
+    max-width:420px;
+    margin:auto;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+}
+
+label{
+    font-weight:bold;
+    font-style: italic;
+}
+
+/* INPUT FIELDS */
+input, select{
+    width:100%;
+    padding:10px;
+    margin:8px 0 15px 0;
+    border-radius:5px;
+    border:none;
+    font-size:15px;
+    background: rgba(255,255,255,0.9);
+}
+
+/* BUTTON */
+button{
+    background:#27ae60;
+    color:white;
+    border:none;
+    padding:12px;
+    width:100%;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e8449;
+}
+
+/* SERVICES */
+ul{
+    max-width:400px;
+    margin:auto;
+    font-size:18px;
+}
+
+li{
+    margin:10px 0;
+}
+
+/* CONTACT */
+#contact p{
+    text-align:center;
+    font-size:18px;
+}
+
+/* FOOTER */
+footer{
+    background:rgba(0,0,0,0.8);
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+align{
+    background-attachment: fixed;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Charan Hotel</h1>
+<p>Welcome to our Hotel Management System</p>
+</header>
+
+<nav>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Booking</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="rooms">
+
+<h2>Our Rooms</h2>
+
+<div class="rooms">
+
+<div class="room">
+<h3>Normal Room</h3>
+<img src="C:\Users\eee\Desktop\mern stack\normal.jpg" alt="Normal Room">
+<p><b>Price:</b> 800rs/- per night</p>
+<p>1 Bed, Free WiFi</p>
+</div>
+
+<div class="room">
+<h3>Deluxe Room</h3>
+<img src="C:\Users\eee\Desktop\mern stack\deluxe.jfif" alt="Deluxe Room">
+<p><b>Price:</b> 1500rs/- per night</p>
+<p>2 Beds, Free WiFi, TV, AC</p>
+</div>
+
+<div class="room">
+<h3>Premium Elite</h3>
+<img src="C:\Users\eee\Desktop\mern stack\premium.webp" alt="Premium Room">
+<p><b>Price:</b> 2500rs/- per night</p>
+<p>Luxury Suite, AC, TV, WiFi, Private Pool</p>
+</div>
+
+</div>
+</section>
+
+<section id="booking">
+
+<h2>Room Booking</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Room Type</label>
+
+<select>
+<option>Normal Room</option>
+<option>Deluxe Room</option>
+<option>Premium Elite Suite</option>
+</select>
+
+<label>Check-in Date</label>
+<input type="date">
+
+<label>Check-out Date</label>
+<input type="date">
+
+<button type="submit">Book Now</button>
+
+</form>
+
+</section>
+
+<section id="services">
+
+<h2>Hotel Services</h2>
+<align>
+<ul>
+<li>Free WiFi</li>
+<li>24/7 Room Service</li>
+<li>Swimming Pool</li>
+<li>Restaurant</li>
+<li>Airport Pickup</li>
+<li>Free Breakfast</li>
+</ul>
+<img src="C:\Users\eee\Desktop\mern stack\services.avif" alt="services">
+</align>
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: info@charanhotel.com</p>
+<p>Phone: +91 9876543210</p>
+
+</section>
+
+<footer>
+<p>© 2026 Charan Hotel Management System</p>
+</footer>
+
+</body>
+</html>
